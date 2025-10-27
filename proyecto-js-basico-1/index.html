@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto JS Básico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Proyecto de JavaScript Básico</h1>
+
+    <section>
+        <h2>Calculadora Básica</h2>
+        <input type="number" id="num1" placeholder="Número 1">
+        <input type="number" id="num2" placeholder="Número 2">
+        <button onclick="sumar()">Sumar</button>
+        <button onclick="restar()">Restar</button>
+        <button onclick="multiplicar()">Multiplicar</button>
+        <button onclick="dividir()">Dividir</button>
+        <div id="resultado-calculadora"></div>
+    </section>
+
+    <section>
+        <h2>Contador de Palabras</h2>
+        <textarea id="frase" placeholder="Escribe una frase..."></textarea>
+        <button onclick="contarPalabras()">Contar Palabras</button>
+        <div id="resultado-contador"></div>
+    </section>
+
+    <section>
+        <h2>Filtrado de Números Pares</h2>
+        <input type="text" id="numeros" placeholder="Ingresa números separados por comas">
+        <button onclick="filtrarPares()">Filtrar Pares</button>
+        <ul id="resultado-pares"></ul>
+    </section>
+
+    <section>
+        <h2>Calculadora de Promedio</h2>
+        <input type="text" id="calificaciones" placeholder="Ingresa calificaciones separadas por comas">
+        <button onclick="calcularPromedio()">Calcular Promedio</button>
+        <div id="resultado-promedio"></div>
+    </section>
+
+    <section>
+        <h2>Juego de Adivinanza</h2>
+        <input type="number" id="numeroUsuario" placeholder="Adivina el número">
+        <button onclick="verificar()">Verificar</button>
+        <div id="resultado-adivinanza"></div>
+    </section>
+
+    <section>
+        <h2>Manipulación de Objetos</h2>
+        <button onclick="promedioEstudiante()">Mostrar Promedio del Estudiante</button>
+        <div id="resultado-objeto"></div>
+    </section>
+
+    <section>
+        <h2>Tabla de Multiplicar</h2>
+        <input type="number" id="numeroTabla" placeholder="Número para tabla">
+        <button onclick="tablaMultiplicar()">Generar Tabla</button>
+        <ul id="resultado-tabla"></ul>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/word-counter.js"></script>
+    <script src="js/even-filter.js"></script>
+    <script src="js/average.js"></script>
+    <script src="js/guess-game.js"></script>
+    <script src="js/object-manipulation.js"></script>
+    <script src="js/multiplication-table.js"></script>
+</body>
+</html>
